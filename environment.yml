@@ -1,0 +1,19 @@
+# Conda environment for VL-KAN (Variable-Length CAPTCHA Recognition with KANs).
+#
+#   conda env create -f environment.yml
+#   conda activate vlkan
+#
+# For CUDA, install the matching PyTorch build from the official index instead of
+# the pip 'torch' line below (see README) and add the appropriate cudatoolkit.
+
+name: vlkan
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip>=23.3
+  - pip:
+      - torch>=2.1,<3.0
+      - pillow>=10.0
+      - numpy>=1.24
+      - tensorboard>=2.15

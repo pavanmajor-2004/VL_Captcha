@@ -1,0 +1,7 @@
+# VL-KAN runtime dependencies (Python >= 3.10).
+# Pinned to compatible lower bounds for reproducible execution.
+
+torch>=2.1,<3.0          # core framework (torch.amp, autograd, grid_sample, lstsq)
+pillow>=10.0             # CAPTCHA rendering and image I/O
+numpy>=1.24              # incidental numeric interop (optional but recommended)
+tensorboard>=2.15        # training telemetry (trainer degrades gracefully if absent)
